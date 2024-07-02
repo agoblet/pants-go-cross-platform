@@ -1,0 +1,16 @@
+[GLOBAL]
+pants_version = "2.21.0"
+backend_packages = [
+  "pants.backend.experimental.go",
+]
+
+[golang]
+minimum_expected_version = "1.22"
+subprocess_env_vars = [
+  "LANG",
+  "LC_CTYPE",
+  "LC_ALL",
+  "PATH",
+  "GOOS",
+  "GOARCH"
+]
